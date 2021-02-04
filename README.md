@@ -1,6 +1,11 @@
 # devops_front
 
+
+
+
+
 ## Project setup
+
 ```
 npm install
 ```
@@ -20,5 +25,22 @@ npm run build
 npm run lint
 ```
 
+### Docker  build
+
+```
+docker build -t devops-front .
+```
+
+### Docker run
+
+```
+docker run -p 80:80 devops-front 
+```
+
+
+
+
+
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
