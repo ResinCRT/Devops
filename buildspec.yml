@@ -1,0 +1,17 @@
+version: 0.2
+
+phase:
+   pre_build:
+    commands:
+      - echo Logging in to Docker Hub...
+      - docker login --username $DOCKERHUB_USER --password-stdin $DOCKERHUB_PW
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - docker build -t $IMAGE_REPO_NAME .
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image...
+      - docker push $IMAGE_REPO_NAME
