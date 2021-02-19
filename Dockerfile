@@ -1,6 +1,6 @@
 
 # Why alpine? -> to reduce docker image size
-FROM node:lts-alpine as front_builder
+FROM node:14.15.5-alpine3.11 as front_builder
 
 WORKDIR /usr/frontend/app/
 
