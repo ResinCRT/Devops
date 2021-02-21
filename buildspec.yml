@@ -1,7 +1,7 @@
 version: 0.2
 
 phases:
-  pre-build:
+  pre_build:
     commands:
       - docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PW
   build:
