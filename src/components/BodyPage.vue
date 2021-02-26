@@ -1,6 +1,6 @@
 <template>
     <div class="main-body">
-        <h1><span class="move-box">{{ msg }}</span> Welcome to DevOps! <span class="move-box">{{ msg }}</span></h1>
+        <h1><span class="move-box">{{ msg }}</span> Welcome to DevOps!! <span class="move-box">{{ msg }}</span></h1>
     </div>  
 </template>
 
